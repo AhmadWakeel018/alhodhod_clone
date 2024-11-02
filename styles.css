@@ -16,6 +16,7 @@ body p {
   width: 100%;
   height: calc(100vh - 40px);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   border-radius: 30px;
@@ -41,7 +42,7 @@ body p {
   height: auto;
 }
 .hero_container .content {
-  padding-top: 30vh;
+  padding-top: 25vh;
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -114,6 +115,7 @@ body p {
 .letter {
   box-sizing: border-box;
   width: 71.3px;
+  min-width: 71.3px;
   height: 71.3px;
   border-radius: 50%;
   display: flex;
@@ -193,6 +195,7 @@ body p {
 }
 .list_of_symbol_card__number h3 {
   width: 80.27px;
+  min-width: 80.27px;
   height: 80.27px;
   margin: 12px 24px;
   border-radius: 50%;
@@ -323,6 +326,7 @@ footer p {
   background: black;
   color: white;
   width: 57.6px;
+  min-width: 57.6px;
   height: 57.6px;
   font-size: 29.07px;
   line-height: 37.95px;
@@ -394,4 +398,297 @@ footer p {
   font-weight: 400;
   letter-spacing: 0em;
   text-align: center;
+}
+#dropdownMenuButton1 button {
+  background: transparent;
+  border: none;
+}
+#dropdownMenuButton1 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  float: right;
+  background-color: transparent;
+  min-width: 50px;
+  border: thin solid rgba(77, 77, 77, 0.3);
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.dropdown-menu.hidden {
+  display: none !important;
+  opacity: 0;
+}
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: block !important;
+  min-width: 5rem !important;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  top: 40px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.mobileLogo {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #f9f9f9 !important;
+  }
+  .letter {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  span.anticon {
+    display: none;
+  }
+  .hero_container .content {
+    padding-top: 96px;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .hero_container .content p:first-child {
+    font-size: 14px;
+  }
+  .hero_container .content p:last-child {
+    font-size: 31px;
+  }
+  .primary_btn {
+    width: 136px;
+    height: 33px;
+    margin-left: 5%;
+    float: left;
+    margin-top: 10px;
+    padding: 0px !important;
+    color: rgb(35, 38, 47);
+    font-size: 11.318px;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 7px;
+  }
+  .hero_container {
+    width: 100%;
+    height: 332px;
+  }
+  .hero_container .logo {
+    display: none;
+  }
+  .mobileLogo {
+    display: block;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 25.94px;
+    font-weight: 700;
+    line-height: 37.093px;
+    left: 30px;
+    top: 30px;
+  }
+  .mobileLogo img {
+    width: 19.287px;
+    height: 29.301px;
+  }
+  .list_of_symbols_container h3.section_heading,
+  .list_of_symbols_block__header,
+  .list_of_symbols_block__header + .divider {
+    display: none;
+  }
+  h3.section_heading {
+    font-size: 16px;
+    margin: 0;
+    line-height: normal;
+    margin: 0% 5%;
+    padding-top: 10px;
+  }
+  .letter_selection_container {
+    background-color: white;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    padding: 0;
+    top: -15px;
+    z-index: 10;
+    border-radius: 14px;
+  }
+  .letters_row_section {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .divider {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .list_of_symbols {
+    margin: 0;
+  }
+  .list_of_symbols_block {
+    background-color: transparent;
+  }
+  .list_of_symbols_block__grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .list_of_symbols_block {
+    width: 100%;
+  }
+  .list_of_symbol_card {
+    width: 100%;
+    border-radius: 17.84px;
+    display: flex;
+    background-color: white;
+    color: inherit;
+    text-decoration: none;
+  }
+  .list_of_symbol_card__number h3 {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+  .list_of_symbol_card__content p:first-child {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .list_of_symbol_card img {
+    margin: auto 25px auto auto;
+    height: 4vh;
+    width: 5vw;
+  }
+  .secondary_btn {
+    margin-top: 20px;
+    margin-bottom: 76px;
+    width: 180px;
+    height: 50px;
+    border: 1px solid rgb(135, 135, 135);
+    border-radius: 13px;
+    font-size: 16px;
+    line-height: normal;
+  }
+  footer {
+    padding: 8px 18px 8px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  .dreams .hero_container .content {
+    padding-top: 18vh;
+  }
+  .dreams .letter_selection_container {
+    background-color: transparent;
+    top: 20px;
+  }
+  .dreams .anticon {
+    display: block;
+  }
+  .dreams .anticon svg {
+    width: 90%;
+    height: auto;
+  }
+  .dreams .section_heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13.41px;
+    margin-bottom: 37px;
+    text-align: center;
+    color: rgb(35, 38, 47);
+  }
+  .dreams_list_container {
+    background-color: transparent;
+    width: 100%;
+  }
+  .dreams_list_container h3 {
+    font-size: 7px;
+    font-weight: 500;
+    line-height: 9px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: rgb(94, 94, 94);
+    margin: 0px 8.25vw 0px 0px;
+  }
+  .accordion {
+    margin: 10px 0;
+  }
+  .accordion-item {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .accordion-item-header {
+    transition: border 0.1s;
+    border: 0.9px solid white;
+    border-radius: 5px;
+    background: white;
+  }
+  .accordion-item-header .list_of_symbol_card__number h3 {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    margin: 11px 10px;
+    font-size: 9.5px;
+    line-height: 12px;
+    font-weight: 600;
+    letter-spacing: 0em;
+  }
+  .accordion-item-header p {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(35, 38, 47);
+    line-height: 15px;
+  }
+  .toggle_text {
+    display: none;
+  }
+  .toggle_icon {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    margin: 0px 2.5vw 0px 0.5vw;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(249, 249, 249);
+    border: none;
+  }
+  .accordion-item-body-content {
+    box-shadow: none;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .accordion-item-body-content h3 {
+    margin: 1.5vh 0px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .accordion-item-body-content p {
+    margin: 5vh 35px 55px;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
 }
